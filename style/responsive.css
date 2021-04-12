@@ -1,0 +1,139 @@
+@media screen and (max-width: 700px) {    
+
+    header .logo {
+        margin-left: 0;
+        color: var(--verde);
+        font-family: 'Arial Black', Times;
+        font-size: 30px;
+    }
+
+    .filme-principal .titulo {
+        margin-top: 10%;
+        font-size: 36px;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        margin-left: 40px;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 300px;
+        height: 40px;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: #AAA;
+        margin-right: 5px;
+    }
+
+    .filme-principal .caixa {
+        visibility: hidden;
+    }
+
+    /* rodapé */
+
+    footer .caixa-container {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        align-items: center;
+    }
+    
+    footer .caixa-container .caixa-footer-left {
+        margin-bottom: 15px;
+        width: 95%;
+    }
+
+    footer .caixa-container .caixa-footer-left table {
+        width: 100%;
+        font-size: 11px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    footer .caixa-container .caixa-footer-rigth {
+        width: 85%;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    
+    .descricao {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .filme-principal .caixa {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1181px) {
+
+    .filme-principal .caixa h3 {
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-bottom: 10px;
+    }
+    
+    .filme-principal .caixa p {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .filme-principal .caixa .botao-caixa {
+        background-color: rgba(0,0,0,.50);
+        border: none;
+        color: white;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 15px;
+        margin-right: 20px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: .4s ease all;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+
+    .filme-principal .caixa h3 {
+        font-size: 28px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-bottom: 10px;
+    }
+    
+    .filme-principal .caixa p {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .filme-principal .caixa .destaque {
+        color: orange;
+    }
+    
+    .filme-principal .caixa .botao-caixa {
+        background-color: rgba(0,0,0,.50);
+        border: none;
+        color: white;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 15px;
+        margin-right: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: .4s ease all;
+    }
+}
+
+

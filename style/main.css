@@ -1,0 +1,243 @@
+:root {
+    --verde:#68f04d;
+    --preta:#141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--verde);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 25px;
+}
+
+header nav a:hover {
+    color: var(--verde);
+    font-weight: 500;
+    border-bottom: var(--verde) solid;
+}
+
+/* filme principal */
+
+.filme-principal {
+    font-size: 16px;  
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/fundo_instrumento.jpg'); 
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover {
+    background-color: var(--verde);
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+/*  caixa de avisos gerais à direita  */
+
+.filme-principal .caixa {
+    background-color: rgba(0,0,0,.4);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-right: 5%;
+    padding: 20px 25px;
+    width: 28%;
+    height: 280px;
+    border: var(--verde) solid 0px;
+    border-radius: 10px;
+}
+
+.filme-principal .caixa h3 {
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.filme-principal .caixa p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.filme-principal .caixa .destaque {
+    color: orange;
+}
+
+.filme-principal .caixa .botao-caixa {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 15px;
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.filme-principal .caixa .botao-caixa:hover {
+    background-color: var(--verde);
+    color: black;
+}
+
+.filme-principal .caixa .input-caixa {
+    padding: 7px;
+}
+
+/* ------ */
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 13px;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+.item:hover {
+    border-radius: 13px;
+}
+
+.item:hover {
+    border: var(--verde) solid;
+}
+
+/* rodapé da página */
+
+footer .titulo {
+    margin-top: 30px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+footer .subtitulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--verde);
+}
+
+footer .lista-rodape {
+    margin: 15px 15px;
+    list-style: none;    
+}
+
+footer .lista-rodape li {    
+    margin-right: 15px;
+    display: inline;
+}
+
+footer .caixa-container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+}
+
+footer .caixa-container .caixa-footer-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .caixa-container .caixa-footer-left .titulo {
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+footer .caixa-container .caixa-footer-left table {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer .caixa-container .caixa-footer-left table tr {
+    height: 30px;    
+}
+
+footer .caixa-container .caixa-footer-left table a {
+    color: white;
+    text-decoration: none;
+}
+footer .caixa-container .caixa-footer-left table a:hover {
+    color: var(--verde);
+    text-decoration: none;
+    border-bottom: var(--verde) solid 2px;
+}
+
+footer .caixa-container .caixa-footer-rigth {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
